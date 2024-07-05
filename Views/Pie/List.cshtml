@@ -1,0 +1,24 @@
+﻿@model IEnumerable<BethanysPieShop.Models.Pie>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><title>Bethany Pie shop</title>
+        
+    </head>
+    <body>
+        @foreach(var pie in Model)
+    {
+
+        
+      <div>
+         <h2>@pie.Name</h2>
+         <h3>@pie.Price.ToString("c") </h3>
+         <h4>@pie.category.CategoryName</h4>
+
+
+
+      </div>
+        
+    }
+</body>
+
+</html>
